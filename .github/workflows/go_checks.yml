@@ -7,11 +7,11 @@ on:
 jobs:
 
   build:
-    runs-on: ${{ matrix.operating-system }}
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         go: [ '1.14' ]
-        operating-system: [ubuntu-latest, windows-latest, macos-latest]
+        os: [windows-latest]
     name: Go ${{ matrix.go }}
 
     steps:
