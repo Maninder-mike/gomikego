@@ -3,8 +3,6 @@ name: Go
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 jobs:
 
@@ -13,11 +11,10 @@ jobs:
     strategy:
       matrix:
         go: [ '1.14' ]
-        operating-system: [ubuntu-latest, windows-latest]
+        operating-system: [ubuntu-latest, windows-latest, macos-latest]
     name: Go ${{ matrix.go }}
 
     steps:
-
       - name: Set up Go 1.x
         uses: actions/setup-go@v2
         with:
