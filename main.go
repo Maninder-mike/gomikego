@@ -15,6 +15,7 @@ import (
 	"fyne.io/fyne/widget"
 )
 
+
 const preferenceCurrentTab = "currentTab"
 
 func parseURL(urlStr string) *url.URL {
