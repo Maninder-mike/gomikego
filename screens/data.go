@@ -7,6 +7,7 @@ import (
 	"fyne.io/fyne/layout"
 	"fyne.io/fyne/theme"
 	"fyne.io/fyne/widget"
+
 )
 
 func databaseTab() fyne.Widget {
